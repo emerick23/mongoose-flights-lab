@@ -8,7 +8,7 @@
 </head>
 <body>
         <h2>Enter a New Ticket</h2>
-        <form action="/flights/tickets/" method="POST">
+        <form action="/flights/<%= flightId %>/tickets" method="POST">
             <label>Seat:
               <input type="text" name="seat" required pattern="[A-F][1-9]\d?">
             </label><br>
